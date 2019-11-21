@@ -10,3 +10,103 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.App{
+  padding: 0px 15px 0px 15px;
+  display: grid;
+  grid-template-columns: [Acol1] auto [Acol2] auto [Acol3] auto [Acol4] auto [Acol5];
+  grid-template-rows: [Arow1] auto [Arow2] auto [Arow3] auto [Arow4] auto [Arow5] auto [Arow6] auto [Arow7];
+}
+
+.logo{
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+.display{
+  grid-column-start: Acol1;
+  grid-column-end: Acol5;
+  grid-row-start: Arow1;
+  grid-row-end: Arow2;
+}
+
+.specContain{
+  display: grid;
+  flex-direction: row;
+  justify-content: space-around;
+
+
+  grid-template-columns: [Scol1] auto [Scol2] auto [Scol3] auto [end];
+  grid-template-rows: [Srow1] auto [end];
+
+  grid-column-start: Acol1;
+  grid-column-end: Acol4;
+  grid-row-start: Arow3;
+  grid-row-end: Arow4;
+}
+
+
+.opContain{
+  display: grid;
+  flex-direction: column;
+  justify-content: space-around;
+
+  grid-template-columns: [Ocol1] auto [end];
+  grid-template-rows: [Orow1] auto [Orow2] auto [Orow3] auto [Orow4] auto [end];
+
+  grid-column-start: Acol4;
+  grid-column-end: end;
+  grid-row-start: Arow3;
+  grid-row-end: end;
+}
+
+.numContain{
+  display: grid;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  grid-template-columns: [Ncol1] auto [Ncol2] auto [Ncol3] auto [end];
+  grid-template-rows: [Nrow1] auto [Nrow2] auto [Nrow3] auto [Nrow4] auto [end];
+
+  grid-column-start: Acol1;
+  grid-column-end: Acol4;
+  grid-row-start: Arow4;
+  grid-row-end: end;
+
+}
+
+.numButtons {
+  background-color: rgb(14, 62, 124);
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+  margin: 4px 0px;
+  border-radius: 50%;
+}
+
+.opButtons {
+  background-color: rgb(57, 122, 148);
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+  margin: 4px 0px;
+  border-radius: 50%;
+}
+
+.specButtons {
+  background-color: rgb(52, 99, 161);
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+  margin: 4px 0px;
+  border-radius: 50%;
+}
